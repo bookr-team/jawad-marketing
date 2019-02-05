@@ -32,7 +32,7 @@
   border-radius: 15px;
   border: 8px solid #F9C03B;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   #lower-sec {
     flex-direction: column;
   }
@@ -42,6 +42,29 @@
   #lower-sec img {
     max-width: 95%;
     border: 3px solid #F9C03B;
+  }
+}
+@media (max-width: 800px) {
+  #lower-sec {
+    flex-direction: column;
+  }
+  #lower-sec div {
+    max-width: 95%;
+    margin-bottom: 20px;
+  }
+  #lower-sec img {
+    max-width: 95%;
+    border: 3px solid #F9C03B;
+  }
+  #lower-secR {
+    flex-direction: column;
+  }
+  #lower-secR div {
+    max-width: 95%;
+    margin-bottom: 20px;
+  }
+  #lower-secR img {
+    max-width: 95%;
   }
 }
 @media (max-width: 500px) {
@@ -55,10 +78,39 @@
     max-width: 95%;
   }
 }
-footer {
+.foot {
   display: flex;
   justify-content: center;
-  padding: 50px;
+  padding: 10px;
+  background-color: #57BEC6;
+  color: black;
+  font-size: 0.9rem;
+}
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 5px;
+  background-color: #57BEC6;
+}
+footer div {
+  margin-top: 30px;
+}
+footer div p {
+  color: black;
+  font-size: 0.7rem;
+}
+footer div .top {
+  font-weight: bold;
+  padding-bottom: 5px;
+  font-size: 0.8rem;
+}
+@media (max-width: 500px) {
+  footer {
+    line-height: 15px;
+  }
+  footer div {
+    width: 30%;
+  }
 }
 .container {
   font-family: arial;
@@ -91,6 +143,10 @@ body header nav a {
   color: black;
   font-size: 1.2rem;
 }
+body header nav a:hover {
+  color: grey;
+  cursor: pointer;
+}
 @media (max-width: 500px) {
   .header-container {
     display: flex;
@@ -119,6 +175,9 @@ body header nav a {
 }
 .main-section h1 {
   font-size: 3rem;
+  font-family: 'Trebuchet MS';
+  line-height: 50px;
+  text-align: center;
 }
 .main-section button {
   background-color: #F9C03B;
@@ -128,6 +187,19 @@ body header nav a {
   margin-top: 80px;
   font-size: 1.2rem;
   color: white;
+}
+.main-section button:hover {
+  border: 1px solid #D99218;
+  background-color: #D99218;
+  cursor: pointer;
+}
+@media (max-width: 800px) {
+  font-size: 2.5rem;
+  h1 {
+    max-width: 90%;
+    line-height: 50px;
+    text-align: center;
+  }
 }
 @media (max-width: 500px) {
   .main-section {
@@ -146,5 +218,9 @@ body header nav a {
     padding: 10px 40px;
     border-radius: 15px;
     border: 1px solid #F9C03B;
+  }
+  .main-section button:hover {
+    border: 1px solid #D99218;
+    background-color: #D99218;
   }
 }
