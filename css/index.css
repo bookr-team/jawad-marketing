@@ -92,21 +92,21 @@ body header nav a {
   font-size: 1.2rem;
 }
 @media (max-width: 500px) {
-  header {
+  .header-container {
     display: flex;
     flex-direction: column;
     background-color: white;
   }
-  header div {
+  .header-container div {
     display: flex;
     justify-content: center;
   }
-  header nav {
+  .header-container nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
-  header nav a {
+  .header-container nav a {
     color: black;
   }
 }
@@ -115,7 +115,7 @@ body header nav a {
   padding-bottom: 200px;
   background-color: #57BEC6;
   color: white;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid lightgrey;
 }
 .main-section h1 {
   font-size: 3rem;
