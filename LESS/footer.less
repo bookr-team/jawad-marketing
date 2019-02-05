@@ -1,7 +1,49 @@
-footer {
+.foot {
     
     display: flex;
     justify-content: center;
-    padding: 50px;
+    padding: 10px;
+    background-color: #57BEC6;
+    color: black;
+    font-size: .9rem;
     
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 5px;
+    background-color: #57BEC6;
+    //border-top: 1px solid grey;
+
+    div {
+       margin-top: 30px;
+
+       p {
+        color: black;
+        font-size: .7rem;
+       }
+
+       .top {
+        font-weight: bold;
+        padding-bottom: 5px;
+        font-size: .8rem;
+        }
+
+    }
+
+
+
+}
+
+@media (max-width: 500px) {
+
+    footer {
+        line-height: 15px;
+    div {
+        width: 30%;
+
+    }
+}
+
 }
