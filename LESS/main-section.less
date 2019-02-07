@@ -1,37 +1,72 @@
 
 .main-section {
-    padding-top: 220px;
-    padding-bottom: 200px;
+    //padding-top: 220px;
+    //padding-bottom: 200px;
     background-color: #57BEC6;
     color: white;
     border-bottom: 1px solid lightgrey;
+
+
+// vvv Carousel and its images
+
+    .carousel {
+        position: relative;
+        
+
+
+        .mainIMG {
+            
+            width: 100%;
+        }
+    }
+
+// vvv --- Heading on top of carousel
 
     h1 {
         font-size: 3rem;
         font-family: 'Trebuchet MS';
         line-height: 50px;
         text-align: center;
+        position: absolute;
+        top: 290px;
+        background-color: grey;
     }
 
+    a {position: absolute;
+    }
+
+        
     button {
         background-color: #F9C03B;
-        padding: 15px 100px;
+        padding: 10px 0;
+        width: 250px;
         border: 1px solid #F9C03B;
         border-radius: 10px;
         margin-top: 80px;
         font-size: 1.2rem;
         color: white;
+        position: absolute;
+        margin-top: 150px;
+        position: absolute;
+        margin: 150px auto 0 auto;
+        left: -110px;
+        top: 220px;
+
         &:hover {
             border: 1px solid #D99218;
             background-color: #D99218;
             cursor: pointer;
         }
+
+        
+
     }
+
     
 
 }
 
-
+//         ------         --------------- vvv TABLET vvv --------------------
 @media (max-width: 800px) {
     font-size: 2.5rem;
 
@@ -39,7 +74,7 @@
         max-width: 90%;
         line-height: 50px;
         text-align: center;
-    
+        
     }
 }
 
@@ -52,9 +87,19 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 80px 0;
+        //padding: 80px 0;
         
-        h1 {font-size: 1.5rem;}
+        h1 {font-size: 1rem;
+            position: absolute;
+
+        }
+
+        .bookpics {
+            display: none;
+
+
+            
+        }
 
         button {
             margin: 40px;
@@ -62,6 +107,10 @@
             padding: 10px 40px;
             border-radius: 15px;
             border: 1px solid #F9C03B;
+            left: -165px;
+            position: static;
+            margin-top: 200px;
+
             &:hover {
                 border: 1px solid #D99218;
                 background-color: #D99218;
