@@ -9,6 +9,7 @@ let index = 0;
 
 imgs[index].style.display = 'block';
 
+
 window.addEventListener('load', () => {
     setInterval( () => {
     if (index === 0) {
