@@ -89,34 +89,66 @@
   justify-content: center;
   padding: 10px;
   background-color: #57BEC6;
-  color: black;
+  color: white;
   font-size: 0.9rem;
 }
 footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   line-height: 5px;
   background-color: #57BEC6;
+}
+footer div form {
+  display: flex;
+}
+footer div form input {
+  padding: 10px;
+  margin-top: 20px;
+}
+footer div form .submit {
+  background-color: #F9C03B;
+  border: 1px solid #F9C03B;
+  color: white;
+  font-weight: bold;
+}
+footer div form .email {
+  color: lightgrey;
 }
 footer div {
   margin-top: 30px;
 }
 footer div p {
-  color: black;
+  color: white;
   font-size: 0.7rem;
-  text-align: center;
 }
 footer div .top {
   font-weight: bold;
-  padding-bottom: 5px;
-  font-size: 0.8rem;
+  padding-bottom: 10px;
+  font-size: 1rem;
+  font-family: tahoma;
+}
+@media (max-width: 800px) {
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer .footspace {
+    display: none;
+  }
 }
 @media (max-width: 500px) {
   footer {
     line-height: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
   }
   footer div {
     width: 30%;
+  }
+  footer div .ecenter {
+    display: flex;
+    justify-content: center;
   }
 }
 .container {
@@ -153,6 +185,7 @@ body header nav {
 body header nav a {
   color: black;
   font-size: 1.2rem;
+  text-decoration: none;
 }
 body header nav a:hover {
   color: grey;
@@ -183,6 +216,7 @@ body header nav a:hover {
   .header-container nav {
     flex-direction: column;
     width: 100%;
+    display: none;
   }
   .header-container nav a {
     color: black;
@@ -191,6 +225,7 @@ body header nav a:hover {
     background-color: #F4F4F4;
     text-align: center;
     font-size: 1.5rem;
+    text-decoration: none;
   }
   .menuDrp {
     display: none;
@@ -205,6 +240,7 @@ body header nav a:hover {
   position: relative;
 }
 .main-section .carousel .mainIMG {
+  display: none;
   width: 100%;
 }
 .main-section h1 {
@@ -214,7 +250,7 @@ body header nav a:hover {
   text-align: center;
   position: absolute;
   top: 290px;
-  background-color: grey;
+  text-shadow: 2px 2px black;
 }
 .main-section a {
   position: absolute;
@@ -240,11 +276,15 @@ body header nav a:hover {
   cursor: pointer;
 }
 @media (max-width: 800px) {
-  font-size: 2.5rem;
-  h1 {
+  .main-section h1 {
     max-width: 90%;
     line-height: 50px;
     text-align: center;
+    top: 200px;
+    font-size: 2rem;
+  }
+  .main-section button {
+    top: 80px;
   }
 }
 @media (max-width: 500px) {
@@ -253,10 +293,12 @@ body header nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
   }
   .main-section h1 {
-    font-size: 1rem;
     position: absolute;
+    top: 73px;
+    font-size: 1.3rem;
   }
   .main-section .bookpics {
     display: none;

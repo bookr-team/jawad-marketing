@@ -4,31 +4,55 @@
     justify-content: center;
     padding: 10px;
     background-color: #57BEC6;
-    color: black;
+    color: white;
     font-size: .9rem;
+    
     
 }
 
 footer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     line-height: 5px;
     background-color: #57BEC6;
     //border-top: 1px solid grey;
+
+    div{
+
+        form {
+            display: flex;
+            
+            input {
+                padding: 10px;
+                margin-top: 20px;
+            }
+
+            .submit {
+                background-color: #F9C03B;
+                border: 1px solid #F9C03B;
+                color: white;
+                font-weight: bold;
+            }
+
+            .email { color: lightgrey;}
+        }
+    }
+
 
     div {
        margin-top: 30px;
 
        p {
-        color: black;
+        color: white;
         font-size: .7rem;
-        text-align: center;
+        //text-align: center;
        }
 
        .top {
         font-weight: bold;
-        padding-bottom: 5px;
-        font-size: .8rem;
+        padding-bottom: 10px;
+        font-size: 1rem;
+        font-family: tahoma;
         }
 
     }
@@ -37,13 +61,38 @@ footer {
 
 }
 
+@media (max-width: 800px) {
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+
+        .footspace {
+            display: none;
+        }
+    }
+}
+
+
+
 @media (max-width: 500px) {
 
     footer {
         line-height: 15px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+       
+      
+
     div {
         width: 30%;
 
+        
+
+        .ecenter {
+            display: flex;
+            justify-content: center;
+        }
     }
 }
 
